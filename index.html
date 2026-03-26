@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EQUORA Solutions - Logística Corporativa y Viajes de Negocios</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        eqBlue: '#1C2C4A',   /* Azul oficial del logo */
+                        eqOrange: '#F2762E', /* Naranja oficial del logo */
+                        eqDark: '#111A2E',   /* Tono más oscuro para contrastes */
+                    },
+                    fontFamily: { 
+                        sans: ['Inter', 'sans-serif'],
+                        logo: ['Montserrat', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #1C2C4A; color: #ffffff; overflow-x: hidden; }
+        .bg-overlay { background: linear-gradient(to right, rgba(28, 44, 74, 0.9), rgba(28, 44, 74, 0.4)); }
+    </style>
+</head>
+<body class="antialiased font-sans selection:bg-eqOrange selection:text-white">
+
+<nav class="fixed w-full z-50 bg-eqBlue/95 backdrop-blur-md border-b border-white/10 py-4 px-6 md:px-12 transition-all duration-300">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+        <a href="#" class="flex flex-col items-start hover:scale-105 transition-transform duration-300">
+            <span class="font-logo font-bold text-3xl tracking-widest text-white leading-none">EQUORA</span>
+            <span class="font-logo font-bold text-[0.70rem] tracking-[0.3em] text-eqOrange mt-1">SOLUTIONS</span>
+        </a>
+        
+        <div class="hidden md:flex items-center space-x-8 text-sm tracking-wider font-medium text-gray-300">
+            <a href="#quienessomos" class="hover:text-eqOrange transition-colors">Quiénes Somos</a>
+            <a href="#servicios" class="hover:text-eqOrange transition-colors">Servicios</a>
+            <a href="#modalidades" class="hover:text-eqOrange transition-colors">Modalidades</a>
+        </div>
+        
+        <div>
+            <a href="#contacto" class="hidden md:inline-block bg-eqOrange hover:bg-orange-600 text-white px-6 py-2.5 rounded-full text-sm font-semibold transition-transform hover:scale-105 shadow-lg shadow-eqOrange/30">
+                Contactar Asesor
+            </a>
+            <button id="mobile-menu-btn" class="md:hidden text-white text-2xl"><i class="fa-solid fa-bars"></i></button>
+        </div>
+    </div>
+    
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden mt-4 pb-2 flex flex-col items-center space-y-4 text-white">
+        <a href="#quienessomos" class="hover:text-eqOrange transition-colors font-medium">Quiénes Somos</a>
+        <a href="#servicios" class="hover:text-eqOrange transition-colors font-medium">Servicios</a>
+        <a href="#modalidades" class="hover:text-eqOrange transition-colors font-medium">Modalidades</a>
+        <a href="#contacto" class="bg-eqOrange px-6 py-2 rounded-full font-bold">Contactar Asesor</a>
+    </div>
+</nav>
+
+<section class="relative h-screen flex items-center pt-20">
+    <div class="absolute inset-0 z-0">
+        <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=80&w=2074&auto=format&fit=crop" class="w-full h-full object-cover" alt="Vuelo Nocturno">
+        <div class="absolute inset-0 bg-overlay"></div>
+    </div>
+    
+    <div class="relative z-10 w-full max-w-7xl mx-auto px-6 md:px-12">
+        <div class="max-w-3xl" data-aos="fade-up" data-aos-duration="1000">
+            <span class="inline-block py-1 px-3 rounded-full bg-eqOrange/20 text-eqOrange border border-eqOrange/50 text-xs font-bold tracking-widest mb-6">
+                LOGÍSTICA CORPORATIVA B2B
+            </span>
+            <h1 class="text-4xl md:text-6xl font-light text-white mb-6 leading-tight">
+                Tu socio estratégico en <span class="font-bold text-eqOrange">logística de viajes</span> y eventos corporativos.
+            </h1>
+            <p class="text-lg md:text-xl text-gray-300 mb-10 max-w-2xl font-light">
+                Desde Chile, conectamos su empresa con todo el mundo. Optimizamos recursos para que su equipo se enfoque en el negocio principal.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4">
+                <a href="#servicios" class="border border-white hover:bg-white hover:text-eqBlue text-center px-8 py-3 rounded-full font-medium transition-colors">
+                    Nuestros Servicios
+                </a>
+                <a href="#contacto" class="bg-eqOrange hover:bg-orange-600 text-white text-center px-8 py-3 rounded-full font-medium transition-transform hover:scale-105 shadow-lg shadow-eqOrange/30">
+                    Hablemos Hoy
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="quienessomos" class="py-24 bg-white text-eqBlue">
+    <div class="max-w-7xl mx-auto px-6 md:px-12">
+        
+        <div class="flex flex-col md:flex-row gap-12 mb-20" data-aos="fade-up">
+            <div class="w-full md:w-5/12">
+                <h2 class="font-logo text-3xl md:text-5xl font-bold mb-6 text-eqBlue">Quiénes Somos</h2>
+                <div class="w-20 h-1 bg-eqOrange mb-8"></div>
+                <!-- Imagen de la Empresa -->
+                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=2076&auto=format&fit=crop" class="w-full h-auto object-cover rounded-2xl shadow-xl" alt="Executive Team EQUORA">
+            </div>
+            <div class="w-full md:w-7/12 md:pl-8 flex flex-col justify-center mt-8 md:mt-0">
+                <p class="text-gray-600 leading-relaxed text-lg mb-6">
+                    EQUORA es una StartUp creada para prestar servicio a todo tipo de empresas. Su fundadora cuenta con más de 10 años de experiencia en el mundo corporativo, producción de eventos y gestión de personas.
+                </p>
+                <p class="text-gray-600 leading-relaxed text-base mb-6">
+                    Nuestra misión es brindar soluciones de movilidad y logística de personal adaptadas a las necesidades de cada cliente, con cobertura en múltiples destinos y en diversos contextos empresariales para garantizar un servicio eficiente y confiable.
+                </p>
+                <p class="text-gray-600 leading-relaxed text-base mb-6">
+                    Radicados en Chile, abarcamos servicios en toda Latinoamérica y contamos con presencia en Estados Unidos.
+                </p>
+                <p class="text-gray-600 leading-relaxed text-base">
+                    Trabajamos junto a partners especializados en cada área, lo que nos permite ofrecer soluciones integrales y asegurar la calidad en cada etapa del servicio.
+                </p>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="bg-gray-50 p-8 rounded-2xl border border-gray-100 hover:border-eqOrange hover:shadow-xl transition-all duration-300 group" data-aos="fade-up" data-aos-delay="100">
+                <div class="w-14 h-14 bg-eqBlue rounded-full flex items-center justify-center text-eqOrange text-2xl mb-6 group-hover:scale-110 transition-transform">
+                    <i class="fa-solid fa-plane-circle-check"></i>
+                </div>
+                <h3 class="font-bold text-xl mb-3">Emisión Directa</h3>
+                <p class="text-sm text-gray-600">Al ser agencia emisora propia, gestionamos sin intermediarios garantizando control absoluto del itinerario.</p>
+            </div>
+            <div class="bg-gray-50 p-8 rounded-2xl border border-gray-100 hover:border-eqOrange hover:shadow-xl transition-all duration-300 group" data-aos="fade-up" data-aos-delay="200">
+                <div class="w-14 h-14 bg-eqBlue rounded-full flex items-center justify-center text-eqOrange text-2xl mb-6 group-hover:scale-110 transition-transform">
+                    <i class="fa-solid fa-bullseye"></i>
+                </div>
+                <h3 class="font-bold text-xl mb-3">Personalización</h3>
+                <p class="text-sm text-gray-600">Adaptamos cada viaje y evento según los requerimientos específicos y la cultura de su empresa.</p>
+            </div>
+            <div class="bg-gray-50 p-8 rounded-2xl border border-gray-100 hover:border-eqOrange hover:shadow-xl transition-all duration-300 group" data-aos="fade-up" data-aos-delay="300">
+                <div class="w-14 h-14 bg-eqBlue rounded-full flex items-center justify-center text-eqOrange text-2xl mb-6 group-hover:scale-110 transition-transform">
+                    <i class="fa-solid fa-handshake-simple"></i>
+                </div>
+                <h3 class="font-bold text-xl mb-3">Trato Directo</h3>
+                <p class="text-sm text-gray-600">Exclusivo con quienes toman las decisiones, asegurando una comunicación resolutiva y sin burocracia.</p>
+            </div>
+            <div class="bg-gray-50 p-8 rounded-2xl border border-gray-100 hover:border-eqOrange hover:shadow-xl transition-all duration-300 group" data-aos="fade-up" data-aos-delay="400">
+                <div class="w-14 h-14 bg-eqBlue rounded-full flex items-center justify-center text-eqOrange text-2xl mb-6 group-hover:scale-110 transition-transform">
+                    <i class="fa-solid fa-headset"></i>
+                </div>
+                <h3 class="font-bold text-xl mb-3">Soporte Externo</h3>
+                <p class="text-sm text-gray-600">Unidad de soporte que supervisa cada movimiento para que su equipo se enfoque solo en el negocio.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="servicios" class="py-24 bg-eqDark relative">
+    <div class="max-w-7xl mx-auto px-6 md:px-12">
+        <div class="text-center mb-16" data-aos="fade-up">
+            <h2 class="font-logo text-3xl md:text-4xl font-bold text-white mb-4">Servicios Logísticos</h2>
+            <p class="text-gray-400 max-w-2xl mx-auto">Soluciones diseñadas para la movilidad y reuniones de alto nivel.</p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <!-- Viajes de Negocios -->
+            <div class="group overflow-hidden rounded-2xl bg-eqBlue border border-white/10 shadow-2xl" data-aos="fade-right">
+                <div class="h-64 overflow-hidden relative">
+                    <!-- Imagen de Viaje Corporativo -->
+                    <img src="https://images.unsplash.com/photo-1554692942-8350ed8ccb59?q=80&w=2000&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Viaje Corporativo">
+                    <div class="absolute inset-0 bg-gradient-to-t from-eqDark via-eqDark/40 to-transparent opacity-90 group-hover:opacity-75 transition-opacity duration-500"></div>
+                </div>
+                <div class="p-8 relative -mt-16 bg-gradient-to-b from-transparent to-eqBlue">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-14 h-14 rounded-full bg-eqDark flex items-center justify-center border border-eqOrange/30 shadow-lg">
+                            <i class="fa-solid fa-suitcase-rolling text-eqOrange text-2xl"></i>
+                        </div>
+                        <h3 class="text-3xl font-bold text-white tracking-wide drop-shadow-md">Viajes de Negocios</h3>
+                    </div>
+                    <p class="text-gray-300 text-sm mb-6 leading-relaxed">
+                        Administramos cada etapa de la movilidad de sus ejecutivos. Nuestra red global de partners asegura eficiencia y cumplimiento normativo.
+                    </p>
+                    <ul class="space-y-4 text-gray-300 text-sm">
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-plane-up text-eqOrange mt-1"></i> <span class="leading-relaxed"><strong>Pasajes Aéreos:</strong> Gestión integral de vuelos nacionales e internacionales, modificaciones y tarifas preferenciales.</span></li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-car text-eqOrange mt-1"></i> <span class="leading-relaxed"><strong>Transfers Privados:</strong> Coordinación de flota terrestre ejecutiva aeropuerto-hotel-oficina en cualquier destino.</span></li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-hotel text-eqOrange mt-1"></i> <span class="leading-relaxed"><strong>Alojamiento Estratégico:</strong> Reservas en cadenas hoteleras B2B avaladas por seguridad y conectividad.</span></li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-passport text-eqOrange mt-1"></i> <span class="leading-relaxed"><strong>Protección Adicional:</strong> Asesoría en visados corporativos y seguros de asistencia médica en viaje.</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Eventos Corporativos -->
+            <div class="group overflow-hidden rounded-2xl bg-eqBlue border border-white/10 shadow-2xl" data-aos="fade-left">
+                <div class="h-64 overflow-hidden relative">
+                    <!-- Imagen de Evento Corporativo -->
+                    <img src="https://images.unsplash.com/photo-1515169067868-5387ec356754?q=80&w=2070&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Evento Corporativo">
+                    <div class="absolute inset-0 bg-gradient-to-t from-eqDark via-eqDark/40 to-transparent opacity-90 group-hover:opacity-75 transition-opacity duration-500"></div>
+                </div>
+                <div class="p-8 relative -mt-16 bg-gradient-to-b from-transparent to-eqBlue">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-14 h-14 rounded-full bg-eqDark flex items-center justify-center border border-eqOrange/30 shadow-lg">
+                            <i class="fa-solid fa-users-rectangle text-eqOrange text-2xl"></i>
+                        </div>
+                        <h3 class="text-3xl font-bold text-white tracking-wide drop-shadow-md">Eventos Corporativos</h3>
+                    </div>
+                    <p class="text-gray-300 text-sm mb-6 leading-relaxed">
+                        Proyectamos su marca mediante experiencias de alto impacto. Producción operativa "End-to-End" desde el concepto hasta la ejecución.
+                    </p>
+                    <ul class="space-y-4 text-gray-300 text-sm">
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-handshake text-eqOrange mt-1"></i> <span class="leading-relaxed"><strong>Reuniones Directivas:</strong> Organización privada de directorios, convenciones de liderazgo y conferencias.</span></li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-glass-cheers text-eqOrange mt-1"></i> <span class="leading-relaxed"><strong>Celebraciones y Kick-Offs:</strong> Fiestas corporativas, aniversarios e integraciones de equipo (Team Building).</span></li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-map-location-dot text-eqOrange mt-1"></i> <span class="leading-relaxed"><strong>Locaciones Premium:</strong> Identificación, evaluación y arriendo de los espacios idóneos para su formato.</span></li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-microphone-lines text-eqOrange mt-1"></i> <span class="leading-relaxed"><strong>Audiovisual y Catering:</strong> Plataforma integral de escenografías, streaming, banquetes gourmet y logística fina.</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="modalidades" class="py-24 bg-eqBlue">
+    <div class="max-w-7xl mx-auto px-6 md:px-12">
+        <div class="text-center mb-16" data-aos="fade-up">
+            <h2 class="font-logo text-3xl md:text-4xl font-bold text-white mb-4">Planes pensados para ti</h2>
+            <p class="text-gray-300 max-w-2xl mx-auto">Adaptamos nuestros servicios integrándolos o brindándolos de forma independiente.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+            
+            <div class="bg-eqDark rounded-2xl p-8 border border-white/10 hover:border-eqOrange/50 transition-colors" data-aos="fade-up" data-aos-delay="100">
+                <h3 class="text-xl font-bold text-white mb-2">On-Demand</h3>
+                <p class="text-eqOrange text-sm font-semibold tracking-wide mb-6 uppercase">Soluciones Individuales</p>
+                <ul class="space-y-4 text-gray-400 text-sm mb-8">
+                    <li class="flex items-center gap-3"><i class="fa-regular fa-circle-dot text-eqOrange/70"></i> Emisión de pasajes aéreos.</li>
+                    <li class="flex items-center gap-3"><i class="fa-regular fa-circle-dot text-eqOrange/70"></i> Reservas de alojamiento.</li>
+                    <li class="flex items-center gap-3"><i class="fa-regular fa-circle-dot text-eqOrange/70"></i> Traslados de personal.</li>
+                </ul>
+                <a href="#contacto" class="block w-full text-center py-3 rounded-lg border border-white/20 hover:bg-white hover:text-eqBlue transition-colors font-medium">Consultar</a>
+            </div>
+
+            <div class="bg-gradient-to-b from-eqDark to-eqBlue rounded-2xl p-8 border-2 border-eqOrange shadow-2xl shadow-eqOrange/20 transform md:-translate-y-4 relative" data-aos="fade-up" data-aos-delay="200">
+                <div class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-eqOrange text-white px-4 py-1 rounded-full text-xs font-bold tracking-widest">
+                    MÁS SOLICITADO
+                </div>
+                <h3 class="text-2xl font-bold text-white mb-2">Elite Management</h3>
+                <p class="text-eqOrange text-sm font-semibold tracking-wide mb-6 uppercase">Gestión Integral</p>
+                <ul class="space-y-4 text-gray-300 text-sm mb-8 font-medium">
+                    <li class="flex items-center gap-3"><i class="fa-solid fa-star text-eqOrange"></i> Prioridad absoluta.</li>
+                    <li class="flex items-center gap-3"><i class="fa-solid fa-user-shield text-eqOrange"></i> Gestión de cuenta dedicada.</li>
+                    <li class="flex items-center gap-3"><i class="fa-solid fa-headset text-eqOrange"></i> Soporte global 24/7.</li>
+                    <li class="flex items-center gap-3"><i class="fa-solid fa-credit-card text-eqOrange"></i> Opción a optar a línea de crédito.</li>
+                </ul>
+                <a href="#contacto" class="block w-full text-center py-3 rounded-lg bg-eqOrange hover:bg-orange-600 text-white transition-colors font-bold">Solicitar Evaluación</a>
+            </div>
+
+            <div class="bg-eqDark rounded-2xl p-8 border border-white/10 hover:border-eqOrange/50 transition-colors" data-aos="fade-up" data-aos-delay="300">
+                <h3 class="text-xl font-bold text-white mb-2">Key-In-Hand</h3>
+                <p class="text-eqOrange text-sm font-semibold tracking-wide mb-6 uppercase">Project Event</p>
+                <ul class="space-y-4 text-gray-400 text-sm mb-8">
+                    <li class="flex items-center gap-3"><i class="fa-regular fa-circle-dot text-eqOrange/70"></i> Plan por evento.</li>
+                    <li class="flex items-center gap-3"><i class="fa-regular fa-circle-dot text-eqOrange/70"></i> Viaje corporativo end-to-end.</li>
+                    <li class="flex items-center gap-3"><i class="fa-regular fa-circle-dot text-eqOrange/70"></i> Gestión completa origen-destino.</li>
+                </ul>
+                <a href="#contacto" class="block w-full text-center py-3 rounded-lg border border-white/20 hover:bg-white hover:text-eqBlue transition-colors font-medium">Planificar Evento</a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="contacto" class="py-32 relative overflow-hidden bg-eqBlue bg-[url('https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=2000')] bg-cover bg-center bg-fixed">
+    <div class="absolute inset-0 bg-eqDark/90 backdrop-blur-sm"></div>
+    <div class="max-w-4xl mx-auto px-6 relative z-10" data-aos="fade-up">
+        <div class="bg-eqBlue/80 backdrop-blur-md border border-white/10 p-10 md:p-14 rounded-3xl shadow-2xl text-center">
+            <h2 class="font-logo text-3xl md:text-5xl font-bold mb-6 text-white tracking-wide">Hablemos de <span class="text-eqOrange">negocios</span></h2>
+            <div class="w-20 h-1 bg-eqOrange mx-auto mb-8 rounded-full"></div>
+            <p class="text-gray-300 text-lg md:text-xl mb-12 max-w-2xl mx-auto leading-relaxed">
+                Contáctenos de forma directa y un ejecutivo de EQUORA le atenderá sin intermediarios para gestionar en el menor tiempo su próximo desafío logístico.
+            </p>
+
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-6">
+                <!-- WhatsApp Button (No Wrap) -->
+                <a href="https://wa.me/56967356688?text=Hola%20equipo%20EQUORA,%20deseo%20cotizar%20servicios." target="_blank" class="flex items-center justify-center bg-eqOrange text-white hover:bg-orange-600 px-8 py-5 rounded-full font-bold transition-transform duration-300 hover:-translate-y-1 shadow-lg shadow-eqOrange/20 text-base md:text-lg w-full sm:w-auto min-w-max whitespace-nowrap">
+                    <i class="fa-brands fa-whatsapp text-2xl md:text-3xl mr-3"></i> WhatsApp (+56 9 6735 6688)
+                </a>
+                
+                <!-- Mail Button -->
+                <a href="mailto:contacto@equorasolutions.com?subject=Cotización%20Servicios%20Corporativos" class="flex items-center justify-center border border-white/20 bg-eqDark/50 text-white hover:bg-white hover:text-eqBlue px-8 py-5 rounded-full font-bold transition-all duration-300 hover:-translate-y-1 shadow-lg text-base md:text-lg w-full sm:w-auto min-w-max whitespace-nowrap">
+                    <i class="fa-regular fa-envelope text-2xl md:text-3xl mr-3"></i> contacto@equorasolutions.com
+                </a>
+            </div>
+            
+            <p class="text-gray-400 text-sm mt-8 opacity-80 uppercase tracking-widest font-semibold font-logo">
+                <i class="fa-solid fa-lock text-xs mr-2"></i> Asesoría Confidencial Garantizada
+            </p>
+        </div>
+    </div>
+</section>
+
+<footer class="bg-eqDark py-12 border-t border-white/10 text-center">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="mb-8 flex flex-col items-center justify-center">
+            <span class="font-logo font-bold text-3xl tracking-widest text-white leading-none mb-1">EQUORA</span>
+            <span class="font-logo font-bold text-[0.70rem] tracking-[0.4em] text-eqOrange">SOLUTIONS</span>
+        </div>
+        
+        <div class="flex justify-center mb-8 gap-6">
+           <a href="#" class="text-gray-500 hover:text-eqOrange transition-colors text-xl"><i class="fa-brands fa-linkedin"></i></a>
+           <a href="#" class="text-gray-500 hover:text-eqOrange transition-colors text-xl"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        
+        <p class="text-gray-500 text-sm">
+            © 2026 EQUORA Solutions. Todos los derechos reservados.
+        </p>
+    </div>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({
+        once: true, // La animación solo ocurre la primera vez que haces scroll
+        offset: 100, // Desplazamiento antes de que se active
+    });
+
+    // Mobile Menu Toggle logic
+    const btn = document.getElementById('mobile-menu-btn');
+    const menu = document.getElementById('mobile-menu');
+
+    if (btn && menu) {
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    }
+</script>
+
+</body>
+</html>
